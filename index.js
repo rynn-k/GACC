@@ -1,5 +1,6 @@
 const express = require('express');
 const multer = require('multer');
+const cors = require('cors');
 const ort = require('onnxruntime-node');
 const sharp = require('sharp');
 const fs = require('fs');
@@ -9,10 +10,13 @@ const { parse } = require('csv-parse/sync');
 const app = express();
 const upload = multer({ storage: multer.memoryStorage() });
 
+app.set('json spaces', 2);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, './public')));
 app.use('/videos', express.static(path.join(__dirname, 'videos')));
 app.use(express.json());
+app.use(cors());
 
 const tagsRaw = fs.readFileSync(path.join(__dirname, 'models', 'selected_tags.csv'));
 const tags = parse(tagsRaw, { columns: true, skip_empty_lines: true });
