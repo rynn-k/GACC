@@ -1,4 +1,4 @@
-![Banner](https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/b2045f86-c298-49e4-bc5b-9350eab7d629/f9961718c03f.png)
+![Banner](https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/5ae6434d-bbdb-452d-b473-6157d132c24b/1779983553820.png)
 
 # Gibran Anime Character Classification
 
@@ -7,7 +7,7 @@ Web aplikasi untuk mengklasifikasikan gambar karakter anime menggunakan model ma
 ## Fitur
 - Klasifikasi karakter anime dari gambar yang diunggah.
 - Analisis tag gambar untuk menentukan kategori karakter (tier).
-- Menampilkan reaksi video yang unik berdasarkan hasil klasifikasi.
+- Menampilkan reaksi video berdasarkan hasil klasifikasi.
 
 ## Persyaratan
 - Node.js 18+
